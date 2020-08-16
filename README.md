@@ -1,12 +1,45 @@
-## Welcome to GitHub Pages
+# Symptoms Checker using Machine Learning
+Identify possible conditions and treatment related to your symptoms. Help you understand what your medical symptoms could mean.
 
-You can use the [editor on GitHub](https://github.com/RishaSKarkera/MachineLearning/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+This dataset is downloaded from Kaggle and the link is mentioned below: https://www.kaggle.com/kerneler/starter-symptom-checker-aaf68256-4
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+The steps included in this analysis are:
 
-### Markdown
+1.Data Collection
+2.Data Analysis
+3.Data Visualization
+4.Data Cleaning
+5.Algorithm selection
+6.Prediction
+7.Saving the Model
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Importing Libraries
+```
+import pandas as pd
+import seaborn as sb
+from matplotlib.pyplot import scatter as sm
+import matplotlib.pyplot as plt
+from sklearn.linear_model import LogisticRegression
+from sklearn.model_selection import train_test_split as tts
+from sklearn.metrics import confusion_matrix
+```
+
+##Step 1: Data Collection
+
+###Collecting the data into dataframe from the local machine
+```
+data = pd.read_csv('symptoms.csv')
+```
+##Step 2: Data Analysis
+
+In this dataset, the target attribute is 'Prognosis', which shows the disease based on the observations of different symptom. Hence, Its a classification problem as records need to be classified.
+
+###Shows the number of rows and columns in the dataset (rows,columns).
+```
+data.shape
+(4920, 133)
+```
+
 
 ```markdown
 Syntax highlighted code block
