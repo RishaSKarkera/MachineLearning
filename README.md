@@ -24,17 +24,17 @@ from sklearn.model_selection import train_test_split as tts
 from sklearn.metrics import confusion_matrix
 ```
 
-##Step 1: Data Collection
+## Step 1: Data Collection
 
-###Collecting the data into dataframe from the local machine
+### Collecting the data into dataframe from the local machine
 ```
 data = pd.read_csv('symptoms.csv')
 ```
-##Step 2: Data Analysis
+## Step 2: Data Analysis
 
 In this dataset, the target attribute is 'Prognosis', which shows the disease based on the observations of different symptom. Hence, Its a classification problem as records need to be classified.
 
-###Shows the number of rows and columns in the dataset (rows,columns).
+### Shows the number of rows and columns in the dataset (rows,columns).
 ```
 data.shape
 (4920, 133)
