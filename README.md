@@ -262,7 +262,7 @@ LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
 ```
 ### Testing step (give new data and test algo efficienccy)
 ```
- loregaccuracy=logreg.score(x_test,y_test)
+loregaccuracy=logreg.score(x_test,y_test)
 loregaccuracy*100
 
 Output:
@@ -337,6 +337,7 @@ array([11, 22, 16, 35, 25, 21, 12, 27, 32,  4, 21, 25, 37, 14, 23, 16, 13,
       dtype=int64)
 ```
 ### compare right vs wrong predictions
+
 y_test has actual answer from 0 to 40 of different diseses and x_test has what it actually predicted 
 Here its comparing those 2 to know how many matches and how many do not.
 ```
