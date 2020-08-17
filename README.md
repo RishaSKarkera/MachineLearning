@@ -46,30 +46,24 @@ data.head()
 
 ![](Images/head 1.png)
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+![](Images/head 2.png)
+### Check last 5(default) values in dataset
 ```
+data.tail()
+```
+![](Images/tail 1.png)
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/RishaSKarkera/MachineLearning/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+![](Images/tail 2.png)
+### Information about dataset
+```
+data.info()
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 4920 entries, 0 to 4919
+Columns: 133 entries, itching to prognosis
+dtypes: int64(132), object(1)
+memory usage: 5.0+ MB
+```
+### Statistical information about dataset
+```
+data.describe()
+```
