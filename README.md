@@ -114,6 +114,8 @@ data.replace({'prognosis':classes},inplace=True)
 sb.countplot(data['prognosis'])
 ```
 ![](Images/countplot.png)
+
+
 It shows the count of the records related to different diseases
 There are 41 diseases in this data set and all have equal number of data 
 ### To coount prognosis instances
@@ -258,8 +260,8 @@ LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
                    random_state=None, solver='lbfgs', tol=0.0001, verbose=0,
                    warm_start=False)
 ```
- ### Testing step (give new data and test algo efficienccy)
- ```
+### Testing step (give new data and test algo efficienccy)
+```
  loregaccuracy=logreg.score(x_test,y_test)
 loregaccuracy*100
 
@@ -333,10 +335,10 @@ array([11, 22, 16, 35, 25, 21, 12, 27, 32,  4, 21, 25, 37, 14, 23, 16, 13,
        27, 39, 14, 35,  8, 11, 13, 21, 16, 17,  4, 16, 15, 38, 19, 32, 18,
        21,  6, 22, 23,  7, 38,  0,  1, 25, 32, 33, 15, 12,  6, 18],
       dtype=int64)
- ```
- ### compare right vs wrong predictions
- y_test has actual answer from 0 to 40 of different diseses and x_test has what it actually predicted 
-Here its comparing those 2 to know how many matches and how many do not
+```
+### compare right vs wrong predictions
+y_test has actual answer from 0 to 40 of different diseses and x_test has what it actually predicted 
+Here its comparing those 2 to know how many matches and how many do not.
 ```
 conmat=confusion_matrix(y_test,logregpred)
 conmat
