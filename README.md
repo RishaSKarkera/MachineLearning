@@ -39,6 +39,11 @@ In this dataset, the target attribute is 'Prognosis', which shows the disease ba
 data.shape
 (4920, 133)
 ```
+### Check first 5(default) values in dataset
+```
+data.head()
+```
+
 
 
 ```markdown
