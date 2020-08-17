@@ -44,7 +44,7 @@ data.shape
 data.head()
 ```
 
-
+![](Images/head 1.png)
 
 ```markdown
 Syntax highlighted code block
